@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="AI 전공자의 프로젝트, 논문, 수상 경력, 연구 관심사를 정리한 개인 포트폴리오입니다."
+    />
+    <title>Junbeom | AI Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="홈으로 이동">JB</a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#projects">Projects</a>
+        <a href="#papers">Papers</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <canvas id="network-canvas" aria-hidden="true"></canvas>
+        <div class="hero-content">
+          <p class="eyebrow">AI Major · Research & Engineering</p>
+          <h1>Junbeom</h1>
+          <p class="hero-copy">
+            모델을 이해하고, 데이터로 검증하고, 실제로 쓰이는 AI 시스템을 만드는
+            데 관심이 있습니다.
+          </p>
+          <div class="hero-actions" aria-label="주요 링크">
+            <a class="button primary" href="#projects">프로젝트 보기</a>
+            <a class="button ghost" href="https://github.com/JunBE0M" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="hero-metrics" aria-label="요약">
+          <div>
+            <strong>AI</strong>
+            <span>Major</span>
+          </div>
+          <div>
+            <strong>ML/DL</strong>
+            <span>Focus</span>
+          </div>
+          <div>
+            <strong>Open</strong>
+            <span>to Research</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>AI를 제품과 연구 사이에서 다룹니다.</h2>
+        </div>
+        <p>
+          컴퓨터 비전, 자연어 처리, 추천 시스템, 생성형 AI처럼 모델의 가능성이
+          빠르게 바뀌는 영역을 공부하고 있습니다. 실험 설계, 성능 분석, 모델
+          서빙까지 연결되는 프로젝트를 좋아합니다.
+        </p>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="card-top">
+              <span>Computer Vision</span>
+              <a href="#" aria-label="프로젝트 링크">↗</a>
+            </div>
+            <h3>Medical Image Classification</h3>
+            <p>
+              CNN/Transformer 기반 분류 모델을 비교하고 Grad-CAM으로 예측 근거를
+              시각화한 실험 프로젝트.
+            </p>
+            <ul class="tags">
+              <li>PyTorch</li>
+              <li>ViT</li>
+              <li>Explainability</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="card-top">
+              <span>NLP</span>
+              <a href="#" aria-label="프로젝트 링크">↗</a>
+            </div>
+            <h3>Korean Review Sentiment Model</h3>
+            <p>
+              한국어 리뷰 데이터를 정제하고 KoBERT 계열 모델을 fine-tuning해
+              감성 분석 API로 만든 프로젝트.
+            </p>
+            <ul class="tags">
+              <li>Transformers</li>
+              <li>FastAPI</li>
+              <li>KoBERT</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="card-top">
+              <span>MLOps</span>
+              <a href="#" aria-label="프로젝트 링크">↗</a>
+            </div>
+            <h3>Experiment Tracking Pipeline</h3>
+            <p>
+              학습 설정, 지표, 모델 아티팩트를 관리하는 실험 추적 파이프라인을
+              구성하고 재현성을 개선.
+            </p>
+            <ul class="tags">
+              <li>MLflow</li>
+              <li>Docker</li>
+              <li>CI</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="papers">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2>Papers & Study</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>2026</span>
+            <h3>Efficient Fine-Tuning for Domain-Specific Language Models</h3>
+            <p>LoRA/QLoRA 기반 도메인 적응 성능 비교 및 분석. 초안 작성 중.</p>
+          </article>
+          <article>
+            <span>2025</span>
+            <h3>Survey: Multimodal Retrieval-Augmented Generation</h3>
+            <p>멀티모달 RAG 구조, 평가 지표, 실패 사례를 정리한 스터디 노트.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="awards">
+        <div class="section-heading">
+          <p class="eyebrow">Highlights</p>
+          <h2>Awards & Experience</h2>
+        </div>
+        <div class="award-list">
+          <article>
+            <strong>AI Hackathon</strong>
+            <span>대상 · 2025</span>
+            <p>사용자 행동 로그를 활용한 개인화 추천 모델 설계.</p>
+          </article>
+          <article>
+            <strong>Undergraduate Research Assistant</strong>
+            <span>2025 - Present</span>
+            <p>딥러닝 모델 성능 평가와 데이터 전처리 자동화 담당.</p>
+          </article>
+          <article>
+            <strong>Dean's List</strong>
+            <span>2024</span>
+            <p>전공 과목 우수 성적.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>같이 연구하거나 만들 일이 있다면 연락 주세요.</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:your.email@example.com">your.email@example.com</a>
+          <a href="https://github.com/JunBE0M" target="_blank" rel="noreferrer">github.com/JunBE0M</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 Junbeom</span>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
