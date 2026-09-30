@@ -5,222 +5,674 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="AI 전공자의 프로젝트, 논문, 수상 경력, 연구 관심사를 정리한 개인 포트폴리오입니다."
+      content="Computer Vision, Multimodal AI, 3D Vision을 연구하는 중앙대학교 AI학과 이준범의 포트폴리오입니다."
     />
-    <title>Junbeom | AI Portfolio</title>
+    <meta name="theme-color" content="#f5f3ee" />
+    <title>이준범 | AI Engineer Portfolio</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="홈으로 이동">JB</a>
-      <nav class="nav" aria-label="주요 메뉴">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#papers">Papers</a>
-        <a href="#awards">Awards</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="이준범 포트폴리오 처음으로 이동">
+          <strong>이준범</strong>
+          <span>AI Engineer</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="메뉴 열기"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+          <a href="#about">소개</a>
+          <a href="#projects">프로젝트</a>
+          <a href="#publications">논문</a>
+          <a href="#materials">자료</a>
+          <a href="#experience">경험</a>
+          <a href="#activities">학력·활동</a>
+          <a href="#contact">연락처</a>
+        </nav>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <canvas id="network-canvas" aria-hidden="true"></canvas>
-        <div class="hero-layout">
-          <div class="hero-content">
-            <p class="eyebrow">AI Major · Machine Learning · Research</p>
-            <h1>Junbeom</h1>
-            <p class="hero-copy">
-              안녕하세요. AI를 전공하며 모델을 이해하고, 데이터로 검증하고,
-              실제로 쓰이는 AI 시스템을 만드는 데 관심이 있습니다.
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="section-kicker">AI ENGINEER · RESEARCHER</p>
+            <h1 id="hero-title">이준범</h1>
+            <p class="hero-role">중앙대학교 AI학과 · 2027년 2월 졸업 예정</p>
+            <p class="hero-intro">
+              의료영상과 3D 데이터를 중심으로, 모델이 다루는 문제를 분명히 정의하고
+              실험 결과의 근거와 한계까지 설명하는 AI 연구를 수행하고 있습니다.
             </p>
-            <div class="hero-actions" aria-label="주요 링크">
-              <a class="button primary" href="#about">About Me</a>
-              <a class="button ghost" href="https://github.com/JunBE0M" target="_blank" rel="noreferrer">
-                GitHub
-              </a>
+            <ul class="interest-list" aria-label="주요 관심 분야">
+              <li>Computer Vision</li>
+              <li>Multimodal AI</li>
+              <li>3D Vision</li>
+              <li>LLM Applications</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">대표 프로젝트 보기</a>
+              <a
+                class="text-link"
+                href="https://github.com/JunBE0M"
+                target="_blank"
+                rel="noreferrer"
+              >GitHub <span aria-hidden="true">↗</span></a>
             </div>
           </div>
 
-          <aside class="profile-card" aria-label="프로필 요약">
-            <div class="profile-photo">
-              <span>JB</span>
+          <figure class="profile-figure">
+            <div class="profile-frame">
+              <img
+                src="./assets/profile-junbeom.jpg"
+                alt="검은색 상의를 입고 정면을 바라보는 이준범의 프로필 사진"
+                width="354"
+                height="472"
+              />
             </div>
-            <div class="profile-caption">
-              <strong>Junbeom</strong>
-              <span>AI Undergraduate Student</span>
-            </div>
-          </aside>
+            <figcaption>
+              <strong>Junbeom Lee</strong>
+              <span>Seoul, Republic of Korea</span>
+            </figcaption>
+          </figure>
         </div>
 
-        <div class="hero-metrics" aria-label="요약">
-          <div>
-            <strong>AI</strong>
-            <span>Major</span>
-          </div>
-          <div>
-            <strong>ML/DL</strong>
-            <span>Focus</span>
-          </div>
-          <div>
-            <strong>Open</strong>
-            <span>to Research</span>
-          </div>
+        <div class="hero-index" aria-label="대표 경험 바로가기">
+          <span>Selected work</span>
+          <a href="#project-restar"><b>01</b> ReSTAR</a>
+          <a href="#project-atsc"><b>02</b> 자율주행 경로 예측</a>
+          <a href="#project-spotu"><b>03</b> SpotU</a>
         </div>
       </section>
 
-      <section class="section about-me" id="about">
+      <section class="section about" id="about" aria-labelledby="about-title">
         <div class="section-heading">
-          <p class="eyebrow">About Me</p>
-          <h2>AI를 배우고, 실험하고, 서비스로 연결하는 사람입니다.</h2>
+          <p class="section-kicker">ABOUT</p>
+          <h2 id="about-title">연구 아이디어를 실험으로 구현하고,<br />결과로 검증합니다.</h2>
         </div>
-        <div class="about-body">
-          <p>
-            저는 AI 전공자로서 딥러닝 모델의 원리를 공부하는 것뿐 아니라,
-            데이터를 다루고 실험을 설계하며 결과를 해석하는 과정에 관심이
-            많습니다. 최근에는 생성형 AI, 컴퓨터 비전, 자연어 처리, MLOps를
-            중심으로 공부하고 있습니다.
+        <div class="about-copy">
+          <p class="lead">
+            생성 의료 데이터의 신뢰성 검증, 경로 예측 모델의 선택적 실행,
+            MRI 기반 임상 위험도 예측처럼 실제 데이터에서 발생하는 불확실성을 다뤄왔습니다.
           </p>
           <p>
-            프로젝트를 할 때는 단순히 성능 점수를 올리는 것보다, 왜 좋아졌는지
-            설명할 수 있는 모델과 재현 가능한 실험 환경을 만드는 것을 중요하게
-            생각합니다.
+            프로젝트에서는 문제 정의와 실험 설계, 결과 해석, 논문 작성까지 이어지는 흐름을
+            중요하게 생각합니다. 동시에 Flutter 앱과 LLM을 연결하며 연구 결과가 사용자 경험으로
+            전달되는 방식도 고민했습니다.
           </p>
-          <div class="quick-facts" aria-label="간단 소개">
-            <span>PyTorch</span>
-            <span>Python</span>
-            <span>Computer Vision</span>
-            <span>NLP</span>
-            <span>Generative AI</span>
-            <span>MLOps</span>
+          <dl class="fact-list">
+            <div>
+              <dt>전공</dt>
+              <dd>중앙대학교 AI학과</dd>
+            </div>
+            <div>
+              <dt>관심 분야</dt>
+              <dd>Computer Vision · 3D Vision · Multimodal AI</dd>
+            </div>
+            <div>
+              <dt>기술</dt>
+              <dd>Python · PyTorch · Flutter · Dart · GitHub</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading section-heading-wide">
+          <div>
+            <p class="section-kicker">SELECTED PROJECTS</p>
+            <h2 id="projects-title">문제에서 결과까지</h2>
           </div>
+          <p>각 프로젝트의 문제 정의, 접근 방법, 담당 역할과 결과를 정리했습니다.</p>
         </div>
-      </section>
 
-      <section class="section" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">Selected Work</p>
-          <h2>Projects</h2>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="card-top">
-              <span>Computer Vision</span>
-              <a href="#" aria-label="프로젝트 링크">↗</a>
+        <div class="project-list">
+          <article class="project project-featured" id="project-restar">
+            <div class="project-number" aria-hidden="true">01</div>
+            <div class="project-main">
+              <div class="project-meta">
+                <span>Medical Multimodal AI</span>
+                <span class="status status-review">AAAI 2027 투고 · 심사 중</span>
+              </div>
+              <h3>ReSTAR</h3>
+              <p class="project-subtitle">생성 X-ray를 학습에 쓰기 전에 신뢰성을 검증하는 방법</p>
+              <p class="project-summary">
+                생성 흉부 X-ray가 읽을 수 있는 영상인지, 요청한 병변이 올바른 위치에 표현됐는지,
+                여러 모델이 같은 소견을 뒷받침하는지를 확인해 학습 후보를 선별했습니다.
+              </p>
+              <button
+                class="media-zoom"
+                type="button"
+                data-lightbox
+                data-src="./assets/restar-framework.png"
+                data-alt="ReSTAR가 합성 흉부 X-ray 후보를 영상 품질, 위치 근거, 모델 간 소견 근거로 선별하는 구조"
+                data-caption="ReSTAR 후보 선별 및 데이터셋 구축 구조 · 논문 Figure 3"
+              >
+                <img
+                  src="./assets/restar-framework.png"
+                  alt="ReSTAR가 합성 흉부 X-ray 후보를 세 단계 신뢰성 gate로 선별하는 구조도"
+                  width="1566"
+                  height="480"
+                  loading="lazy"
+                />
+                <span>Figure 크게 보기</span>
+              </button>
+              <ul class="metric-row" aria-label="ReSTAR 주요 결과">
+                <li><strong>20,000</strong><span>생성 후보</span></li>
+                <li><strong>14,065</strong><span>선별된 학습 후보</span></li>
+                <li><strong>12 / 12</strong><span>평가 조합 AUPRC 개선</span></li>
+              </ul>
+              <details class="project-details">
+                <summary>프로젝트 상세 보기</summary>
+                <div class="detail-grid">
+                  <div>
+                    <h4>문제와 방법</h4>
+                    <p>
+                      희소 소견을 보완하려고 만든 합성 영상도 목표 병변이 보이지 않거나 위치가
+                      어긋날 수 있습니다. ReSTAR는 영상 품질, 위치 근거, 모델 간 소견 근거를
+                      독립적인 gate로 적용하고 확인하지 않은 소견은 음성 라벨로 단정하지 않습니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>직접 맡은 일</h4>
+                    <p>
+                      연구 주제 선정과 문제 정의, 전체 연구 흐름 구성, 팀원 역할 분담을 맡았습니다.
+                      방법론을 구체화하고 분류·검출 결과를 분석했으며 교수 피드백을 반영해 본문,
+                      표, 그림, 실험 설정과 보충 설명을 정리했습니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>결과와 한계</h4>
+                    <p>
+                      세 분류 backbone의 MIMIC-CXR·NIH 평가 12개 조합에서 평균 AUPRC가 모두
+                      개선됐습니다. 다만 개선 폭은 조건별로 달랐고, 제한적인 전문가 평가는 합성
+                      영상의 임상적 유효성을 확정하지 않습니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>기술</h4>
+                    <p>PyTorch · CXR Classification · Detection · Vision-Language Model</p>
+                  </div>
+                </div>
+              </details>
             </div>
-            <h3>Medical Image Classification</h3>
-            <p>
-              CNN/Transformer 기반 분류 모델을 비교하고 Grad-CAM으로 예측 근거를
-              시각화한 실험 프로젝트.
-            </p>
-            <ul class="tags">
-              <li>PyTorch</li>
-              <li>ViT</li>
-              <li>Explainability</li>
-            </ul>
           </article>
 
-          <article class="project-card">
-            <div class="card-top">
-              <span>NLP</span>
-              <a href="#" aria-label="프로젝트 링크">↗</a>
+          <article class="project project-with-media" id="project-atsc">
+            <div class="project-number" aria-hidden="true">02</div>
+            <div class="project-main">
+              <div class="project-meta">
+                <span>Efficient AI · Autonomous Driving</span>
+                <span class="status status-accepted">게재 수락</span>
+              </div>
+              <h3>자율주행 경로 예측 모델의 선택적 실행</h3>
+              <p class="project-subtitle">예측 이력으로 Large model이 필요한 순간을 판단</p>
+              <p class="project-summary">
+                Small model의 현재·과거 예측을 같은 미래 시각과 좌표계로 정렬해 비교하고,
+                Large model의 추가 실행이 실제로 도움이 될지를 Router가 판단하도록 구성했습니다.
+              </p>
+              <button
+                class="media-zoom"
+                type="button"
+                data-lightbox
+                data-src="./assets/atsc-framework.png"
+                data-alt="Small model의 예측 이력과 ATSC 특징으로 Large model 실행 여부를 선택하는 구조도"
+                data-caption="ATSC-Fixed와 ATSC-Adaptive의 선택적 실행 구조"
+              >
+                <img
+                  src="./assets/atsc-framework.png"
+                  alt="Small model의 예측 이력과 ATSC 특징으로 Large model 실행 여부를 선택하는 구조도"
+                  width="724"
+                  height="497"
+                  loading="lazy"
+                />
+                <span>그림 크게 보기</span>
+              </button>
+              <ul class="metric-row" aria-label="자율주행 경로 예측 주요 결과">
+                <li><strong>1.67%</strong><span>Small 대비 ADE 감소</span></li>
+                <li><strong>12.8%</strong><span>Large 호출률</span></li>
+                <li><strong>3,486</strong><span>평가 프레임</span></li>
+              </ul>
+              <details class="project-details">
+                <summary>프로젝트 상세 보기</summary>
+                <div class="detail-grid">
+                  <div>
+                    <h4>문제와 방법</h4>
+                    <p>
+                      큰 모델이 항상 더 정확하지 않기 때문에 장면 복잡도만으로 호출 여부를 정하지
+                      않았습니다. 같은 미래 시점을 가리키도록 예측 이력을 정렬한 ATSC 특징으로
+                      Large model의 개선 가능성을 학습했습니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>직접 맡은 일</h4>
+                    <p>
+                      공동 1저자로 참여해 데이터셋 관련 내용을 정리하고 최종 원고를 수정했습니다.
+                      실험 조건과 결과가 과장 없이 전달되도록 평가 범위와 해석을 함께 점검했습니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>결과와 한계</h4>
+                    <p>
+                      성공한 8개 주행에서 ADE가 3.012 m에서 2.962 m로 감소했습니다. 이는 저장된
+                      주행 자료의 경로 예측 결과이며 실제 차량 제어, 충돌 회피, 폐루프 안전성을
+                      검증한 결과는 아닙니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>발표·기술</h4>
+                    <p>제7회 한국인공지능학술대회 게재 수락 · PyTorch · MetaDrive · MobileNetV4</p>
+                  </div>
+                </div>
+                <button
+                  class="media-zoom media-zoom-secondary"
+                  type="button"
+                  data-lightbox
+                  data-src="./assets/atsc-cases.png"
+                  data-alt="Large model 호출 사례와 Small model 유지 사례의 경로 예측 비교"
+                  data-caption="Router가 Large 실행과 Small 유지를 선택한 사례"
+                >
+                  <img
+                    src="./assets/atsc-cases.png"
+                    alt="Large model 호출 사례와 Small model 유지 사례의 경로 예측 비교"
+                    width="1400"
+                    height="2102"
+                    loading="lazy"
+                  />
+                  <span>선택 사례 크게 보기</span>
+                </button>
+              </details>
             </div>
-            <h3>Korean Review Sentiment Model</h3>
-            <p>
-              한국어 리뷰 데이터를 정제하고 KoBERT 계열 모델을 fine-tuning해
-              감성 분석 API로 만든 프로젝트.
-            </p>
-            <ul class="tags">
-              <li>Transformers</li>
-              <li>FastAPI</li>
-              <li>KoBERT</li>
-            </ul>
           </article>
 
-          <article class="project-card">
-            <div class="card-top">
-              <span>MLOps</span>
-              <a href="#" aria-label="프로젝트 링크">↗</a>
+          <article class="project project-with-media" id="project-spotu">
+            <div class="project-number" aria-hidden="true">03</div>
+            <div class="project-main">
+              <div class="project-meta">
+                <span>LLM Application · Mobile</span>
+                <span class="status">개발 프로젝트</span>
+              </div>
+              <h3>SpotU</h3>
+              <p class="project-subtitle">사용자 맥락을 반영하는 LLM 운동관리 앱</p>
+              <p class="project-summary">
+                사용자의 운동 목표, 경험 수준, 체중관리 정보를 프롬프트에 반영하고 운동 루틴 추천과
+                질의응답 결과가 Flutter 앱의 기능 흐름으로 이어지도록 구현했습니다.
+              </p>
+              <div class="video-frame">
+                <video
+                  controls
+                  muted
+                  playsinline
+                  preload="metadata"
+                  aria-label="SpotU 운동관리 모바일 앱의 기능 시연 영상"
+                >
+                  <source src="./assets/spotu-demo.mp4" type="video/mp4" />
+                  브라우저가 동영상 재생을 지원하지 않습니다.
+                </video>
+              </div>
+              <details class="project-details">
+                <summary>프로젝트 상세 보기</summary>
+                <div class="detail-grid">
+                  <div>
+                    <h4>문제와 방법</h4>
+                    <p>
+                      일률적인 운동 추천 대신 사용자가 입력한 목표와 경험 수준을 프롬프트 구조에
+                      반영했습니다. 운동 부위 선택, 수준별 추천, 운동 기록 피드백이 챗봇 응답과
+                      이어지도록 서비스 흐름을 구성했습니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>직접 맡은 일</h4>
+                    <p>
+                      LLM 연동과 챗봇 서비스 구조를 담당했습니다. 사용자 맥락을 반영하는 프롬프트를
+                      구성하고 프론트엔드와 응답 데이터를 연결하는 방식을 팀과 조율했습니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>확인된 범위</h4>
+                    <p>
+                      앱 기능과 LLM 응답 흐름을 구현한 프로젝트입니다. 사용자 수, 운영 성과,
+                      추천 정확도처럼 확인되지 않은 지표는 제시하지 않습니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>기술</h4>
+                    <p>Flutter · Dart · LLM · Prompt Design</p>
+                  </div>
+                </div>
+              </details>
             </div>
-            <h3>Experiment Tracking Pipeline</h3>
-            <p>
-              학습 설정, 지표, 모델 아티팩트를 관리하는 실험 추적 파이프라인을
-              구성하고 재현성을 개선.
-            </p>
-            <ul class="tags">
-              <li>MLflow</li>
-              <li>Docker</li>
-              <li>CI</li>
-            </ul>
+          </article>
+
+          <article class="project" id="project-pni">
+            <div class="project-number" aria-hidden="true">04</div>
+            <div class="project-main">
+              <div class="project-meta">
+                <span>Medical Imaging · 2.5D MIL</span>
+                <span class="status status-accepted">APCCAS 2026 Poster 수락</span>
+              </div>
+              <h3>MRI 기반 PNI 예측</h3>
+              <p class="project-subtitle">인접 단면과 축 방향 순서를 함께 사용하는 환자 단위 예측</p>
+              <p class="project-summary">
+                간내담관암 환자의 수술 전 T2-weighted MRI에서 신경주위침윤(PNI) 위험도를 예측하는
+                연구에 참여했습니다. 인접 단면을 2.5D slab으로 묶고 순서 정보를 함께 집계합니다.
+              </p>
+              <ul class="metric-row" aria-label="PNI 예측 주요 결과">
+                <li><strong>183명</strong><span>단일기관 코호트</span></li>
+                <li><strong>0.770</strong><span>평균 AUROC</span></li>
+                <li><strong>5-fold</strong><span>환자 단위 평가</span></li>
+              </ul>
+              <details class="project-details">
+                <summary>프로젝트 상세 보기</summary>
+                <div class="detail-grid">
+                  <div>
+                    <h4>문제와 방법</h4>
+                    <p>
+                      PNI는 보통 수술 후 병리검사로 확인되지만, 수술 전 위험도 판단을 돕기 위해
+                      환자 단위 라벨만 있는 약지도 학습 문제로 구성했습니다. OAS-MIL은 set-attention과
+                      양방향 sequence-attention을 함께 사용합니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>직접 맡은 일</h4>
+                    <p>
+                      서울대학교 의료영상 연구 인턴으로 연구 내용을 이해하고 논문 흐름과 결과 해석을
+                      검토했습니다. Figure와 본문 설명이 일치하도록 표현을 개선했습니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>결과와 한계</h4>
+                    <p>
+                      OAS-MIL은 AUROC 0.770 ± 0.077을 기록했습니다. 작은 단일기관 코호트에서 얻은
+                      결과이므로 scanner, 촬영 protocol, 기관이 달라졌을 때의 외부 검증이 필요합니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>논문·기술</h4>
+                    <p>
+                      <a
+                        class="inline-link"
+                        href="https://arxiv.org/abs/2609.11271"
+                        target="_blank"
+                        rel="noreferrer"
+                      >arXiv:2609.11271 <span aria-hidden="true">↗</span></a><br />
+                      PyTorch · ResNet-18 · Multiple Instance Learning · BiGRU
+                    </p>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <article class="project" id="project-3d">
+            <div class="project-number" aria-hidden="true">05</div>
+            <div class="project-main">
+              <div class="project-meta">
+                <span>3D Vision · Multimodal AI</span>
+                <span class="status status-progress">연구 진행 중</span>
+              </div>
+              <h3>3D 편집 연구</h3>
+              <p class="project-subtitle">텍스트 기반 편집에서 오류가 발생하는 단계를 분석</p>
+              <p class="project-summary">
+                AnchorFlow, EditP23 등 텍스트 기반 3D 편집 결과에서 부품 누락, 위치·방향 오류,
+                원본 형상 변형을 나누어 살피고 압축·복원 과정과 편집 과정의 영향을 비교합니다.
+              </p>
+              <details class="project-details">
+                <summary>프로젝트 상세 보기</summary>
+                <div class="detail-grid">
+                  <div>
+                    <h4>연구 질문</h4>
+                    <p>
+                      편집 결과의 실패가 언어 지시를 반영하는 과정에서 생기는지, 3D 표현을
+                      압축·복원하는 단계에서 이미 생기는지를 구분하는 것이 핵심 질문입니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>진행 방식</h4>
+                    <p>
+                      편집을 제외한 압축·복원 실험과 여러 방법의 성공·실패 사례를 같은 기준으로
+                      비교하고, 부품 보존과 공간 관계 변화를 중심으로 오류를 정리하고 있습니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>현재 상태</h4>
+                    <p>
+                      멀티모달 연구실에서 진행 중인 연구입니다. 최신 실험 결과가 공개 가능한 형태로
+                      정리되기 전까지 해결 완료나 정량 성능 향상을 주장하지 않습니다.
+                    </p>
+                  </div>
+                  <div>
+                    <h4>키워드</h4>
+                    <p>AnchorFlow · EditP23 · Text-guided 3D Editing · Reconstruction</p>
+                  </div>
+                </div>
+              </details>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="section split" id="papers">
+      <section class="section publications" id="publications" aria-labelledby="publications-title">
         <div class="section-heading">
-          <p class="eyebrow">Research</p>
-          <h2>Papers & Study</h2>
+          <p class="section-kicker">PUBLICATIONS</p>
+          <h2 id="publications-title">논문과 학술 원고</h2>
         </div>
-        <div class="timeline">
-          <article>
-            <span>2026</span>
-            <h3>Efficient Fine-Tuning for Domain-Specific Language Models</h3>
-            <p>LoRA/QLoRA 기반 도메인 적응 성능 비교 및 분석. 초안 작성 중.</p>
-          </article>
-          <article>
-            <span>2025</span>
-            <h3>Survey: Multimodal Retrieval-Augmented Generation</h3>
-            <p>멀티모달 RAG 구조, 평가 지표, 실패 사례를 정리한 스터디 노트.</p>
-          </article>
-        </div>
+        <ol class="publication-list">
+          <li>
+            <div class="publication-year">2027</div>
+            <article>
+              <div class="publication-status">AAAI 2027 투고 · 심사 중</div>
+              <h3>ReSTAR: Reliability-Gated Synthetic Candidate Selection for Targeted Augmentation in Radiographic Findings</h3>
+              <p>익명 심사 원고 · 연구 주제 선정, 방법론 구체화, 실험 분석, 논문 작성·수정 참여</p>
+              <a href="#project-restar">연결된 프로젝트 보기</a>
+            </article>
+          </li>
+          <li>
+            <div class="publication-year">2026</div>
+            <article>
+              <div class="publication-status">arXiv preprint · APCCAS 2026 Poster 수락</div>
+              <h3>Order-Aware 2.5D Multiple Instance Learning for Preoperative MRI-Based Perineural Invasion Risk Assessment in Intrahepatic Cholangiocarcinoma</h3>
+              <p class="authors">
+                Hyunsu Go, Youngung Han, Kyeonghun Kim, Jinyong Jun,
+                <strong>Junbeom Lee</strong>, Dohyun Kweon, Yului Jeong, Suah Park,
+                Sungha Park, Anna Jung, Woo Kyoung Jeong, Ken Ying-Kai Liao,
+                Hyuk-Jae Lee, Nam-Joon Kim
+              </p>
+              <div class="publication-links">
+                <a href="#project-pni">연결된 프로젝트</a>
+                <a href="https://arxiv.org/abs/2609.11271" target="_blank" rel="noreferrer">arXiv ↗</a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <div class="publication-year">2026</div>
+            <article>
+              <div class="publication-status">제7회 한국인공지능학술대회 · 게재 수락</div>
+              <h3>시간 정렬된 예측 이력을 이용한 자율주행 경로 예측 모델의 선택적 실행</h3>
+              <p class="authors">
+                주희찬*, <strong>이준범*</strong>, 최강*, 김민준, 장성민, 권순범 · *공동 1저자
+              </p>
+              <a href="#project-atsc">연결된 프로젝트 보기</a>
+            </article>
+          </li>
+        </ol>
       </section>
 
-      <section class="section" id="awards">
+      <section class="section materials" id="materials" aria-labelledby="materials-title">
         <div class="section-heading">
-          <p class="eyebrow">Highlights</p>
-          <h2>Awards & Experience</h2>
+          <p class="section-kicker">DOWNLOADS</p>
+          <h2 id="materials-title">자료 다운로드</h2>
         </div>
-        <div class="award-list">
-          <article>
-            <strong>AI Hackathon</strong>
-            <span>대상 · 2025</span>
-            <p>사용자 행동 로그를 활용한 개인화 추천 모델 설계.</p>
-          </article>
-          <article>
-            <strong>Undergraduate Research Assistant</strong>
-            <span>2025 - Present</span>
-            <p>딥러닝 모델 성능 평가와 데이터 전처리 자동화 담당.</p>
-          </article>
-          <article>
-            <strong>Dean's List</strong>
-            <span>2024</span>
-            <p>전공 과목 우수 성적.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section contact" id="contact">
         <div>
-          <p class="eyebrow">Contact</p>
-          <h2>같이 연구하거나 만들 일이 있다면 연락 주세요.</h2>
+          <p class="materials-intro">논문과 연구 발표 자료의 원문을 내려받을 수 있습니다.</p>
+          <ul class="material-list">
+            <li>
+              <a href="./assets/documents/restar-paper.pdf" download="ReSTAR_Anonymous_Submission.pdf">
+                <span><b>ReSTAR</b><small>익명 심사 원고 · PDF</small></span>
+                <strong>PDF ↓</strong>
+              </a>
+            </li>
+            <li>
+              <a href="./assets/documents/oas-mil-paper.pdf" download="OAS-MIL_Preprint.pdf">
+                <span><b>OAS-MIL</b><small>MRI 기반 PNI 위험도 예측 논문 · PDF</small></span>
+                <strong>PDF ↓</strong>
+              </a>
+            </li>
+            <li>
+              <a href="./assets/documents/atsc-paper.docx" download="ATSC_Conference_Paper.docx">
+                <span><b>자율주행 경로 예측</b><small>학술대회 원고 · DOCX</small></span>
+                <strong>DOCX ↓</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section experience" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="section-kicker">EXPERIENCE</p>
+          <h2 id="experience-title">연구·개발 경험</h2>
+        </div>
+        <div class="experience-list">
+          <article>
+            <div class="experience-marker" aria-hidden="true"></div>
+            <div>
+              <p class="experience-type">Undergraduate Research</p>
+              <h3>중앙대학교 PRE 학부 연구 참여 프로그램</h3>
+              <p>
+                생성 의료 데이터의 신뢰성 검증을 주제로 ReSTAR 연구를 진행했습니다. 문제 정의부터
+                실험 분석, 교수 피드백 반영, 논문 수정까지 연구의 전 과정을 경험했습니다.
+              </p>
+              <a href="#project-restar">ReSTAR 프로젝트</a>
+            </div>
+          </article>
+          <article>
+            <div class="experience-marker" aria-hidden="true"></div>
+            <div>
+              <p class="experience-type">Medical Imaging Research Intern</p>
+              <h3>서울대학교 의료영상 연구 인턴</h3>
+              <p>
+                T2-weighted MRI 기반 PNI 위험도 예측 연구에 참여해 논문 구조, 결과 해석,
+                figure와 본문 설명의 일관성을 검토했습니다.
+              </p>
+              <a href="#project-pni">PNI 예측 프로젝트</a>
+            </div>
+          </article>
+          <article>
+            <div class="experience-marker" aria-hidden="true"></div>
+            <div>
+              <p class="experience-type">Ongoing Research</p>
+              <h3>멀티모달 3D 편집 연구</h3>
+              <p>
+                텍스트 기반 3D 편집의 성공·실패 사례를 비교하며 부품 보존, 공간 관계,
+                압축·복원 단계의 영향을 분석하고 있습니다.
+              </p>
+              <a href="#project-3d">3D 편집 연구</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section activities" id="activities" aria-labelledby="activities-title">
+        <div class="section-heading">
+          <p class="section-kicker">EDUCATION & ACTIVITIES</p>
+          <h2 id="activities-title">학력과 활동</h2>
+        </div>
+        <div class="activity-columns">
+          <article class="education-block">
+            <p class="activity-label">학력</p>
+            <h3>중앙대학교 AI학과</h3>
+            <p>2026년 9월 기준 4학년 2학기 재학</p>
+            <strong>2027년 2월 졸업 예정</strong>
+          </article>
+          <div class="volunteer-list">
+            <article>
+              <time datetime="2026-02">2026.02–2026.07</time>
+              <div>
+                <h3>
+                  <a href="https://imsilab.github.io/imsi/" target="_blank" rel="noreferrer">
+                    서울대학교 학부생 연구인턴 <span aria-hidden="true">↗</span>
+                  </a>
+                </h3>
+              </div>
+            </article>
+            <article>
+              <time datetime="2026-08">2026.08–현재</time>
+              <div>
+                <h3>
+                  <a href="https://sites.google.com/view/vig-lab/home" target="_blank" rel="noreferrer">
+                    중앙대학교 학부생 연구인턴 <span aria-hidden="true">↗</span>
+                  </a>
+                </h3>
+              </div>
+            </article>
+            <article>
+              <time datetime="2023-07">2023.07</time>
+              <div>
+                <h3>두드림장애인학교</h3>
+                <p>장애인 학습자의 검정고시 준비를 위한 수학·과학 교육봉사</p>
+              </div>
+            </article>
+            <article>
+              <time datetime="2018-04">2018.04 — 2020.02</time>
+              <div>
+                <h3>안산동믿음지역아동센터</h3>
+                <p>초·중등학생 수학·과학 학습지도와 숙제 점검</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="section-kicker">CONTACT</p>
+          <h2 id="contact-title">함께할 기회를 기다립니다.</h2>
+          <p>AI Engineer 신입 포지션과 연구 협업 제안을 환영합니다.</p>
         </div>
         <div class="contact-links">
-          <a href="mailto:your.email@example.com">your.email@example.com</a>
-          <a href="https://github.com/JunBE0M" target="_blank" rel="noreferrer">github.com/JunBE0M</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:junbeom.lee02@gmail.com">
+            <span>Email</span>
+            <strong>junbeom.lee02@gmail.com</strong>
+          </a>
+          <a href="https://github.com/JunBE0M" target="_blank" rel="noreferrer">
+            <span>GitHub</span>
+            <strong>github.com/JunBE0M <b aria-hidden="true">↗</b></strong>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <span>© 2026 Junbeom</span>
-      <a href="#top">Back to top</a>
+      <span>© <span data-current-year>2026</span> 이준범</span>
+      <a href="#top">맨 위로 <span aria-hidden="true">↑</span></a>
     </footer>
+
+    <dialog class="image-dialog" id="image-dialog" aria-label="프로젝트 이미지 확대 보기">
+      <button class="dialog-close" type="button" data-dialog-close aria-label="확대 이미지 닫기">×</button>
+      <figure>
+        <img id="dialog-image" src="./assets/atsc-framework.png" alt="확대된 프로젝트 자료" />
+        <figcaption id="dialog-caption"></figcaption>
+      </figure>
+    </dialog>
 
     <script src="./script.js"></script>
   </body>
